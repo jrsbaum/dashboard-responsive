@@ -139,7 +139,7 @@ body {
 .logo {
     font-size: var(--fs-1);
     font-weight: var(--fw-600);
-    color: var(--prussian-blue)
+    color: var(--onyx)
 }
 
 .menu-toggle-btn .icon { font-size: 28px;}
@@ -219,3 +219,4 @@ body {
     color: var(--silver-chalice);
     font-weight: var(--fw-500);
 }
+
