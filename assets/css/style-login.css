@@ -123,14 +123,6 @@ form h3 {
     padding-bottom: 10px;
 }
 
-.bar {
-    background-color: var(--black_12);
-    position: relative;
-    top: 0;
-    height: 1px;
-    margin: 5px;
-  }
-
 form input[type=text],  
 form input[type=password]{
     text-align: center;
@@ -140,14 +132,16 @@ form input[type=password]{
     margin: 5px 0;    
 }
 
-form input[type=text]:hover {
-    background-color: var(--tangerine);
-}
-form input[type=password]:hover{
-    background-color: var(--tangerine);
-}
 
-form input[type=submit] {
+.bar {
+    background-color: var(--black_12);
+    position: relative;
+    top: 0;
+    height: 1px;
+    margin: 5px;
+  }
+
+#formCard .loginBtn{
     text-align: center;
     width: 100%;
     height: 40px;
@@ -157,8 +151,24 @@ form input[type=submit] {
     border-radius: var(--radius-6);
     margin-top: 5px;
     transition: var(--transition);
-}
+  }
+  
+  #formCard .loginBtn:hover{
+      background-color: var(--tangerine);
+  }
 
-form input[type=submit]:hover {
-    background-color: var(--tangerine);    
-}
+#formCard .createAccount{
+    text-align: center;
+    width: 100%;
+    height: 40px;
+    cursor: pointer;
+    background: var(--silver-chalice);
+    color: var(--white);
+    border-radius: var(--radius-6);
+    margin-top: 5px;
+    transition: var(--transition);
+  }
+  
+  #formCard .createAccount:hover{
+      background-color: var(--tangerine);
+  }
