@@ -180,7 +180,7 @@ body {
   background: var(--black_08);
 }
 
-.ctx-menu-btn.red {
+.ctx-menu-btn.tangerine {
   --hover-color: var(--selective-yellow);
   --color: var(--selective-yellow);
 }
@@ -248,7 +248,7 @@ body {
 
 .card-badge {
   background: var(--bg, var(--silver-chalice));
-  color: var(--color, var(--black_06));
+  color: var(--color, var(--blue-green));
   font-size: var(--fs-10);
   font-weight: var(--fw-600);
   width: max-content;
@@ -258,35 +258,32 @@ body {
 
 .card-badge.blue {
   --bg: var(--light-cornflower-blue);
-  --color: var(--light-cornflower-blue);
+  --color: var(--onyx);
 }
 
 .card-badge.orange {
-  --bg: var(--tangerine);
-  --color: var(tangerine);
+  --bg: var(--selective-yellow);
+  --color: var(--blue-green);
 }
 
 .card-badge.cyan {
-  --bg: var(--honolulu-blue);
-  --color: var(--honolulu-blue);
+  --bg: var(--light-cornflower-blue);
+  --color: var(--onyx);
 }
 
-/* trocar red por yellow */
-.card-badge.red {
-  --bg: var(--selective-yellow);
-  --color: var(--selective-yellow);
+.card-badge.tang {
+  --bg: var(--tangerine);
+  --color: var(--onyx);
 }
 
 .card-badge.green {
   --bg: var(--blue-green);
-  --color: var(--blue-green);
+  --color: var(--onyx);
 }
 
 .card-badge.radius-pill {
   border-radius: 50px;
 }
-
-/*  */
 
 .cointainer {
   padding-inline: 15px;
@@ -522,17 +519,17 @@ body {
 
 .home .task-card .card-icon.green {
   --background: var(--blue-green);
-  --color: var(--blue-green);
+  --color: var(--onyx);
 }
 
 .home .task-card .card-icon.blue {
   --background: var(--honolulu-blue);
-  --color: var(--honolulu-blue);
+  --color: var(--onyx);
 }
 
 .home .task-card .icon {
   font-size: 28px;
-  color: var(--color);
+  color: var(--onyx);
 }
 
 .home .task-card .card-icon {
@@ -587,7 +584,7 @@ body {
   color: var(--blue-green);
 }
 
-.revenue-item .icon.red {
+.revenue-item .icon.tangerine {
   color: var(--tangerine);
 }
 
@@ -603,7 +600,6 @@ body {
   font-size: var(--fs-9);
 }
 
-/*  */
 .project-list {
   display: grid;
   gap: 25px;
@@ -675,3 +671,72 @@ body {
 .card-avatar-item:not(:first-child) {
   margin-left: -15px;
 }
+.tasks-item:not(:last-child) { margin-bottom: 10px; }
+
+.tasks .task-card {
+  display: grid;
+  gap: 15px;
+}
+
+.tasks .card-input {
+  display: flex;
+  align-items: flex-start;
+  gap: 8px;
+}
+
+.tasks .card-input > input {
+  margin-top: 2px;
+  accent-color: var(--blue-green);
+}
+
+.tasks .card-input > input:checked { filter: drop-shadow(0 0 2px var(--blue-green)); }
+
+.tasks .task-label {
+  color: var(--silver-chalice);
+  font-size: var(--fs-9);
+  font-weight: var(--fw-600);
+  line-height: 1.5;
+}
+
+.tasks .card-meta-list {
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+  gap: 15px;
+}
+
+.tasks .meta-box {
+  color: var(--silver-chalice);
+  font-size: var(--fs-9);
+  font-weight: var(--fw-600);
+  display: flex;
+  align-items: center;
+  gap: 5px;
+}
+
+.tasks .btn-primary {
+  margin-block: 25px;
+  margin-inline: auto;
+}
+
+.tasks .btn-primary .spiner {
+  padding: 6px;
+  border: 2px solid var(--blue-green);
+  border-top-color: transparent;
+  border-radius: 50%;
+  animation: rotate 0.75s linear infinite;
+  display: none;
+}
+
+.tasks .btn-primary:is(:hover, :focus) .spiner {
+  border-color: var(--white);
+  border-top-color: transparent;
+}
+
+@keyframes rotate {
+  0% { transform: rotate(0); }
+
+  100% { transform: rotate(1turn); }
+}
+
+.tasks .btn-primary.active .spiner { display: block; }
