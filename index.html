@@ -35,27 +35,21 @@
                 <div class="cointainer">
                     <ul class="navbar-list">
                         <li>
-                            <a href="#" class="navbar-link active icon-box">
+                            <a href="index.html" class="navbar-link active icon-box">
                                 <span class="material-symbols-rounded icon">grid_view</span>
                                 <span>Home</span>
                             </a>
                         </li>
                         <li>
-                            <a href="#" class="navbar-link icon-box">
+                            <a href="#projects" class="navbar-link icon-box">
                                 <span class="material-symbols-rounded icon">folder</span>
                                 <span>Projetos</span>
                             </a>
                         </li>
                         <li>
-                            <a href="#" class="navbar-link icon-box">
+                            <a href="#tasks" class="navbar-link icon-box">
                                 <span class="material-symbols-rounded icon">list</span>
                                 <span>Tarefas</span>
-                            </a>
-                        </li>
-                        <li>
-                            <a href="#" class="navbar-link icon-box">
-                                <span class="material-symbols-rounded icon">bar_chart</span>
-                                <span>Reports</span>
                             </a>
                         </li>
                         <li>
@@ -97,7 +91,7 @@
             <h2 class="h2 article-title">Olá Júnior Baum</h2>
             <p class="article-subtitle">Bem-vindo ao Dashboard!</p>
 
-            <section class="home">
+            <section class="home" id="home">
                 <div class="card profile-card">
                     <button class="card-menu-btn icon-box" arial-label="Mais" data-menu-btn>
                         <span class="material-symbols-rounded icon">more_horiz</span>
@@ -293,7 +287,7 @@
                     </ul>
                 </div>
             </section>
-            <section class="projects">
+            <section class="projects" id="projects">
 
                 <div class="section-title-wrapper">
                     <h2 class="section-title">Projetos Recentes</h2>
@@ -379,13 +373,6 @@
                                     </a>
                                 </li>
 
-                                <li class="card-avatar-item">
-                                    <a href="#">
-                                        <img src="./assets/images/img-2.jpg" alt="Cecília Schüler" width="32"
-                                            height="32">
-                                    </a>
-                                </li>
-
                             </ul>
 
                         </div>
@@ -460,13 +447,6 @@
                                 <li class="card-avatar-item">
                                     <a href="#">
                                         <img src="./assets/images/img-1.jpg" alt="Júnior Baum" width="32" height="32">
-                                    </a>
-                                </li>
-
-                                <li class="card-avatar-item">
-                                    <a href="#">
-                                        <img src="./assets/images/img-2.jpg" alt="Cecília Schüler" width="32"
-                                            height="32">
                                     </a>
                                 </li>
 
@@ -548,13 +528,6 @@
                                     </a>
                                 </li>
 
-                                <li class="card-avatar-item">
-                                    <a href="#">
-                                        <img src="./assets/images/img-2.jpg" alt="Cecília Schüler" width="32"
-                                            height="32">
-                                    </a>
-                                </li>
-
                             </ul>
 
                         </div>
@@ -563,7 +536,7 @@
                 </ul>
 
             </section>
-            <section class="tasks">
+            <section class="tasks" id="tasks">
 
                 <div class="section-title-wrapper">
                     <h2 class="section-title">Tarefas</h2>
@@ -749,6 +722,15 @@
 
         </article>
     </main>
+    <footer class="footer" id="footer">
+        <div class="container">
+
+            <p class="copyright"><a href="https://github.com/jrsbaum/dashboard-responsive" class="copyright-link">Júnior
+                    Baum | Developer</a>
+            </p>
+
+        </div>
+    </footer>
 
     <script src="./assets/js/script.js"></script>
 
