@@ -92,7 +92,7 @@ html {
 
 body {
     padding-block-start: 72px;
-    background: rgba(255, 255, 255, 0.99);
+    background: rgb(235, 235, 235);
 }
 
 :focus-visible {
@@ -145,6 +145,8 @@ body {
 
 .card-menu-btn:is(:hover, :focus) {
     background: var(--black_08);
+    
+    
 }
 
 .ctx-menu {
@@ -176,11 +178,12 @@ body {
 }
 
 .ctx-menu-btn:is(:hover, :focus) {
-    color: var(--hover-color, var(--black_06));
-    background: var(--black_08);
+    color: var(--hover-color, var(--tangerine));
+    background: var(--tangerine);
+   
 }
 
-.ctx-menu-btn.tangerine {
+.ctx-menu-btn.tang {
     --hover-color: var(--selective-yellow);
     --color: var(--selective-yellow);
 }
@@ -291,6 +294,7 @@ body {
 
 .icon-box {
     font-variation-settings: "wght" 300;
+    color: var(--honolulu-blue)
 }
 
 .icon-box .icon {
@@ -319,17 +323,13 @@ body {
 .header>.cointainer {
     display: flex;
     justify-content: space-between;
-    align-items: center;
+    align-items: flex-start;
 }
 
 .logo {
     font-size: var(--fs-1);
     font-weight: var(--fw-600);
     color: var(--onyx);
-}
-
-.menu-toggle-btn .icon {
-    font-size: 28px;
 }
 
 .navbar {
@@ -393,7 +393,7 @@ body {
 }
 
 .profile-avatar {
-    overflow: hidden;
+    overflow: auto;
 
 }
 
@@ -586,7 +586,7 @@ body {
     color: var(--blue-green);
 }
 
-.revenue-item .icon.tangerine {
+.revenue-item .icon.tang {
     color: var(--tangerine);
 }
 
@@ -626,7 +626,7 @@ body {
 }
 
 .project-card .card-title>a:is(:hover, :focus) {
-    color: var(--blue-green);
+    color: var(--silver-chalice);
 }
 
 .project-card .card-badge {
@@ -882,3 +882,66 @@ body {
     }
 
 }
+
+
+  
+  /* responsivo para 992 */
+  
+@media (min-width: 992px) {
+    
+    .container { max-width: 800px; }  
+     
+    .header {
+      height: flex;
+      flex-direction: row;
+      padding-block: 10px;
+    }
+  
+    .header.active { height: unset; }
+  
+    .navbar {
+      all: unset;
+      flex-grow: 1;
+    }
+  
+    .navbar .container { display: flex; }
+  
+    .navbar-list {
+        margin-bottom: 0;
+        display: flex;
+        gap: 10px;
+        margin-inline: auto;
+        justify-content: space-around;
+    }
+  
+    .user-action-list {
+      flex-direction: row;
+      gap: 20px;
+    }
+  
+    .article.container { padding-block: 35px; }
+  
+    .home { grid-template-columns: 1.25fr 0.75fr 1fr; }
+  
+    .home .card-wrapper { grid-template-columns: 1fr; }
+  
+    .progress-list { align-items: flex-end; }
+  
+  
+    .project-list { grid-template-columns: repeat(3, 1fr); }
+  
+    
+    .tasks .task-card {
+      grid-template-columns: 1fr 0.5fr 0.5fr;
+      align-items: center;
+    }
+          
+    .footer-link,
+    .copyright {
+        align-items: center;
+    }
+   
+  }
+  
+
+  

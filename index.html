@@ -25,12 +25,7 @@
 
             <h1>
                 <a href="#" class="logo">Dashboard</a>
-            </h1>
-
-            <button class="menu-toggle-btn icon" data-menu-toglebtn aria-label="Toggle Menu">
-                <span class="material-symbols-rounded icon">menu</span>
-            </button>
-
+            </h1>          
             <nav class="navbar">
                 <div class="cointainer">
                     <ul class="navbar-list">
@@ -51,22 +46,7 @@
                                 <span class="material-symbols-rounded icon">list</span>
                                 <span>Tarefas</span>
                             </a>
-                        </li>
-                        <li>
-                            <a href="#" class="navbar-link icon-box">
-                                <span class="material-symbols-rounded  icon">settings</span>
-                                <span>Configurações</span>
-                            </a>
-                        </li>
-                    </ul>
-                    <ul class="user-action-list">
-
-                        <li>
-                            <a href="#" class="notification icon-box">
-                                <span class="material-symbols-rounded icon">notifications</span>
-                            </a>
-                        </li>
-
+                        </li>                  
                         <li>
                             <a href="#" class="header-profile">
                                 <figure class="profile-avatar">
@@ -141,7 +121,7 @@
 
                     <ul class="contact-list">
                         <li>
-                            <a href="mailto:xyz@mail.com" class="contact-link icon-box">
+                            <a href="mailto:juniorsbaum@hotmail.com" class="contact-link icon-box">
                                 <span class="material-symbols-rounded  icon">mail</span>
 
                                 <p class="text">juniorsbaum@hotmail.com</p>
@@ -165,11 +145,11 @@
                             <div class="progress-label">
                                 <p class="progress-title">Projetos finalizados</p>
 
-                                <data class="progress-data" value="45">45%</data>
+                                <data class="progress-data" value="60">60%</data>
                             </div>
 
                             <div class="progress-bar">
-                                <div class="progress" style="--width: 45%; --bg: var(--blue-green);"></div>
+                                <div class="progress" style="--width: 60%; --bg: var(--blue-green);"></div>
                             </div>
 
                         </li>
@@ -274,7 +254,7 @@
 
                         <li class="revenue-item icon-box">
 
-                            <span class="material-symbols-rounded  icon  red">trending_down</span>
+                            <span class="material-symbols-rounded icon tang">trending_down</span>
 
                             <div>
                                 <data class="revenue-item-data" value="10">10%</data>
@@ -292,7 +272,8 @@
                 <div class="section-title-wrapper">
                     <h2 class="section-title">Projetos Recentes</h2>
 
-                    <button class="btn btn-link icon-box">
+                    <button class="btn btn-link icon-box" onclick="show()">
+                    
                         <span>Ver tudo</span>
 
                         <span class="material-symbols-rounded  icon" aria-hidden="true">arrow_forward</span>
@@ -330,7 +311,7 @@
                                 <li class="divider"></li>
 
                                 <li class="ctx-item">
-                                    <button class="ctx-menu-btn red icon-box">
+                                    <button class="ctx-menu-btn tang icon-box">
                                         <span class="material-symbols-rounded  icon" aria-hidden="true">delete</span>
 
                                         <span class="ctx-menu-text">Delete</span>
@@ -407,7 +388,7 @@
                                 <li class="divider"></li>
 
                                 <li class="ctx-item">
-                                    <button class="ctx-menu-btn red icon-box">
+                                    <button class="ctx-menu-btn tang icon-box">
                                         <span class="material-symbols-rounded  icon" aria-hidden="true">delete</span>
 
                                         <span class="ctx-menu-text">Deletar</span>
@@ -416,10 +397,10 @@
 
                             </ul>
 
-                            <time class="card-date" datetime=""></time>
+                            <time class="card-date" datetime="">4 de Julho de 2022</time>
 
                             <h3 class="card-title">
-                                <a href="#">Study Manager React</a>
+                                <a href="https://study-manager.vercel.app/" target="_blank" rel="noopener noreferrer" >Study Manager React</a>
                             </h3>
 
                             <div class="card-badge orange">React</div>
@@ -433,11 +414,11 @@
                                 <div class="progress-label">
                                     <span class="progress-title">Progresso</span>
 
-                                    <data class="progress-data" value="30">30%</data>
+                                    <data class="progress-data" value="75">75%</data>
                                 </div>
 
                                 <div class="progress-bar">
-                                    <div class="progress" style="--width: 30%; --bg: var(--blue-green);"></div>
+                                    <div class="progress" style="--width: 75%; --bg: var(--blue-green);"></div>
                                 </div>
 
                             </div>
@@ -484,7 +465,7 @@
                                 <li class="divider"></li>
 
                                 <li class="ctx-item">
-                                    <button class="ctx-menu-btn red icon-box">
+                                    <button class="ctx-menu-btn tang icon-box">
                                         <span class="material-symbols-rounded  icon" aria-hidden="true">delete</span>
 
                                         <span class="ctx-menu-text">Deletar</span>
@@ -493,10 +474,10 @@
 
                             </ul>
 
-                            <time class="card-date" datetime=""></time>
+                            <time class="card-date" datetime="">9 de Setembro de 2022</time>
 
                             <h3 class="card-title">
-                                <a href="#">Pokedex Angular</a>
+                                <a href="https://pokedex-jrsbaum.vercel.app/" target="_blank" rel="noopener noreferrer" >Pokedex Angular</a>
                             </h3>
 
                             <div class="card-badge cyan">Angular</div>
@@ -541,7 +522,7 @@
                 <div class="section-title-wrapper">
                     <h2 class="section-title">Tarefas</h2>
 
-                    <button class="btn btn-link icon-box">
+                    <button class="btn btn-link icon-box" onclick="show()">
                         <span>Ver tudo</span>
 
                         <span class="material-symbols-rounded  icon" aria-hidden="true">arrow_forward</span>
@@ -582,7 +563,7 @@
                                 </li>
 
                                 <li>
-                                    <div class="card-badge red">Alta</div>
+                                    <div class="card-badge tang">Alta</div>
                                 </li>
 
                             </ul>
@@ -712,17 +693,18 @@
 
                 </ul>
 
-                <button class="btn btn-primary" data-load-more>
+                <button class="btn btn-primary" data-load-more data-menu-toglebtn aria-label="Toggle Menu">
                     <span class="spiner"></span>
 
                     <span>Carregar</span>
                 </button>
+                
 
             </section>
 
         </article>
     </main>
-    <footer class="footer" id="footer">
+    <footer class="footer" id="footer" >
         <div class="container">
 
             <p class="copyright"><a href="https://github.com/jrsbaum/dashboard-responsive" class="copyright-link">Júnior
